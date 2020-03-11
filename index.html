@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>serveyform</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  text-align: center;
+  background: skyblue ;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+</style>
+</head>
+
+
+  <h1>Survey Form</h1>
+  <div style="background-color: white;"> <p>let us know how we can impprove Free</p>
+
+    <form>
+        Name   <input type="text" placeholder=" Enter Your Name"> <br>
+        <br>
+        E-mail  <input type="email" placeholder=" Enter Your Email"><br>
+        <br>
+        Age     <form action="/action_page.php">
+            <label for="birthday">Age:</label>
+            <input type="date" id="birthday" name="birthday">
+          
+          </form>
+       
+
+      
+      <div class="survey" >
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>student</option>
+          <option value="student">Student</option>
+          <option value="job">graduate</option>
+          <option value="learner">docotor</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </form>
+      <div class="survey">
+        <p> how likely is that you would recommend FreeCodeCamp to a friend? </p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label> <br>
+          <br>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label><br>
+          <br>
+  
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label><br>
+      </div>
+  
+      <div class="survey">
+        <p>what do you like the most in FCC:</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>select an option</option>
+          <option value="select an option">other</option>
+         
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+     thing should  improved in futtuer?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Front-end
+          Projects</label><br>
+        <label>
+          <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end
+          Projects</label><br>
+        <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data
+          Visualization</label><br>
+    
+  
+</div>
+
+  </div></div></div> </body>
+  </html>
